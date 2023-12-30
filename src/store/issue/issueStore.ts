@@ -35,8 +35,8 @@ class IssueStore {
           title: issue.title,
           url: issue.url,
           comments: issue.comments.toString(),
-          created_at: issue.created_at,
-          updated_at: issue.updated_at,
+          created_at: issue.created_at.split('T')[0],
+          updated_at: issue.updated_at.split('T')[0],
           user: issue.user.login,
         };
         filteredIssues.push(newIssueItem);
