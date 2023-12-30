@@ -1,4 +1,4 @@
-export default interface issueItem {
+export interface issueItem {
   url: string
   repository_url: string
   labels_url: string
@@ -27,6 +27,16 @@ export default interface issueItem {
   timeline_url: string
   performed_via_github_app: any
   state_reason: any
+}
+
+export interface issueEssentialItem {
+  [key: string]: string;
+  id: string;
+  url: string;
+  comments: string;
+  created_at: string;
+  updated_at: string;
+  user: string;
 }
 
 export interface User {

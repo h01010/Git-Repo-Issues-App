@@ -1,7 +1,16 @@
+import { issueEssentialItem } from '../../../../types/issueItem';
 import { IssueTable } from './style';
 
-const Table = () => {
+type TableProps = {
+  issues: issueEssentialItem[];
+};
+
+const Table = ({ issues }: TableProps) => {
   const headers = [
+    {
+      text: '번호',
+      value: 'id',
+    },
     {
       text: '제목',
       value: 'title',
@@ -26,55 +35,20 @@ const Table = () => {
 
   const headerKey = headers.map((header) => header.value);
 
-  interface itemInterface {
-    [index: string]: string;
-    title: string;
-    user: string;
-    created_at: string;
-    updated_at: string;
-    comments: string;
-  }
-
-  const items: itemInterface[] = [
-    {
-      title: '이슈 번호 1',
-      user: 'asd1123dd',
-      created_at: '2013-05-29',
-      updated_at: '2023-04-13',
-      comments: '0',
-    },
-    {
-      title: '이슈 번호 2',
-      user: 'dfadsfadsf',
-      created_at: '2013-05-29',
-      updated_at: '2023-04-13',
-      comments: '0',
-    },
-    {
-      title: '이슈 번호 3',
-      user: 'dfsdf',
-      created_at: '2013-05-29',
-      updated_at: '2023-04-13',
-      comments: '0',
-    },
-  ];
-
   return (
     <IssueTable>
       <thead>
         <tr>
-          <th>번호</th>
           {headers.map((header) => (
             <th key={header.value}>{header.text}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {items.map((item, index) => (
+        {issues.map((issue, index) => (
           <tr key={index}>
-            <td key={index}>{index + 1}</td>
             {headerKey.map((key) => (
-              <td key={key + index}>{item[key] || ''}</td>
+              <td key={key + index}>{issue[key]}</td>
             ))}
           </tr>
         ))}
