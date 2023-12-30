@@ -1,20 +1,21 @@
 # Git-Issues-App
-
+                                                   
 ## 실행 방법
-
+                                                   
 1) git clone을 해주세요
-
+                                  
 2) .env.template ⇒ .env로 변경 후, REACT_APP_USER_TOKEN에 유저 토큰을 넣어주세요.
-
+                                  
 3) 아래 명령어를 순서대로 실행해주세요.
-
+                                  
 ```json
 npm install
 npm start
 ```
 
+                                  
 ## Structures
-
+                                  
 - `/assets` : font, image, icon 등 정적 요소들을 두는 폴더
 - `/components`: 여러 페이지에서 공유되는 shared(or common) 컴포넌트, layout 컴포넌트를 두는 폴더
 - `/pages`: 여러 하위 컴포넌트 조각들이 모여 만들어지는 페이지 컴포넌트
@@ -23,9 +24,10 @@ npm start
 - `/stores`: Mobx store를 이용하여 필요한 데이터를 api로 요청 및 가공, 저장하는 폴더
 - `/types`: entity type들을 보관하는 폴더
 - `/utils`: 컴포넌트 렌더링 외에, 연산을 수행하는 모듈들을 저장하는 폴더
-
+                 
+                                                   
 ## 사용기술 및 라이브러리
-
+                 
 - `React`
 - `Typescript`
 - `eslint & prettier`
@@ -34,17 +36,20 @@ npm start
 - `axios`
 - `styled-components`
 - `react-icons`
-
+                 
+                                                                    
 ## GIT
-
+                 
+                                                                    
 ### Project
-
+                                  
 아래처럼 보드(https://github.com/users/h01010/projects/4)를 활용하여 할 태스크들을 분리
 ![image](https://github.com/h01010/Git-Repo-Issues-App/assets/44168693/eeae1f1f-73c1-4b12-8841-1b8e3c4cea9e)
 
 
+                                  
 ### Commit & Branch
-
+                                  
 - commit msg type
 [참고 링크](https://medium.com/humanscape-tech/%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9D%B8-commit-message-%EC%9E%91%EC%84%B1%EC%9D%84-%EC%9C%84%ED%95%9C-conventional-commits-ae885898e754)
     - **build**: 모듈 설치 및 package 변화, readme.md 추가
@@ -58,11 +63,11 @@ npm start
     - change list와 결과 화면 result 첨부(아래)
           
 ![image](https://github.com/h01010/Git-Repo-Issues-App/assets/44168693/27c08d0b-8c76-48d9-9f8c-16cdf83430fb)
-
-
-
+                                  
+                                  
+                                  
 ## 구현하지 못한 태스크
-
+                                  
 *시간상의 문제로 구현하지 못한 태스크는 TODO 주석으로 추가해두었습니다, 아래는 구현 아이디어입니다.*
 
 - 필터 기능
