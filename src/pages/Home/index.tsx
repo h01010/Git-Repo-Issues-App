@@ -1,19 +1,29 @@
-function Home() {
+import { observer } from 'mobx-react-lite';
+import { useStore } from '../../store';
+import { useEffect } from 'react';
+import Title from '../../components/Title';
+import Filter from './components/Filter';
+import Pagination from './components/Pagination';
+import Table from './components/Table';
+import { HomeBox, IssueBox } from './style';
+
+const Home = observer(() => {
+  const { issueStore } = useStore();
+  const { issuesWithEssentialKey, getIssueList } = issueStore;
+  useEffect(() => {
+    getIssueList();
+  }, []);
+
   return (
-    <div>
-      <div className="title">
-        <h1>이슈정리</h1>
-      </div>
-      <div className="issue__list">
-        <div className="issue__filter">
-          <div>이슈 상태</div>
-          <div>sort 필터</div>
-        </div>
-        <div className="issue__table">이슈 테이블</div>
-        <div className="issue__pagination">12345</div>
-      </div>
-    </div>
+    <HomeBox>
+      <Title text="이슈정리" />
+      <IssueBox>
+        <Filter />
+        <Table issues={issuesWithEssentialKey} />
+        <Pagination />
+      </IssueBox>
+    </HomeBox>
   );
-}
+});
 
 export default Home;
