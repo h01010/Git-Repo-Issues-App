@@ -12,7 +12,7 @@
 npm install
 npm start
 ```
-치종 구현 결과 `master` 브랜치에서 확인가능합니다
+최종 구현 결과 `master` 브랜치에서 확인가능합니다
 
                                   
 ## Structures
