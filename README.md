@@ -58,7 +58,7 @@ npm start
     - **refactor**: 버그를 수정하거나 기능을 추가하지 않는 코드 변경, 리팩토링
     - **style**: 스타일 적용 및 수정
 - branch
-    - 브랜치 앞에는 MNA-{num}를 붙여 Project 보드의 태스크 번호와 연결해두었습니다.
+    - 브랜치 앞에는 GIA-{num}를 붙여 Project 보드의 태스크 번호와 연결해두었습니다.
 - PR
     - change list와 결과 화면 result 첨부(아래)
           
