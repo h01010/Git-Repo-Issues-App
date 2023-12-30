@@ -1,9 +1,10 @@
+import Title from '../../components/Title';
+import { HomeBox } from './style';
+
 function Home() {
   return (
-    <div>
-      <div className="title">
-        <h1>이슈정리</h1>
-      </div>
+    <HomeBox>
+      <Title text="이슈정리" />
       <div className="issue__list">
         <div className="issue__filter">
           <div>이슈 상태</div>
@@ -12,7 +13,7 @@ function Home() {
         <div className="issue__table">이슈 테이블</div>
         <div className="issue__pagination">12345</div>
       </div>
-    </div>
+    </HomeBox>
   );
 }
 
