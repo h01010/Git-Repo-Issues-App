@@ -72,3 +72,4 @@ npm start
     - api request parameter 추가
         - page = {number}
     - Math.floor(총 데이터 수 / 한 페이지당의 데이터 수-10개)에 맞게 페이지 넘버들을 연산
+- Not Found 페이지 스타일링
