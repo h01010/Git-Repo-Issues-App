@@ -1,19 +1,23 @@
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <div className="title">
-        <h1>이슈정리</h1>
-      </div>
-      <div className="issue__list">
-        <div className="issue__filter">
-          <div>이슈 상태</div>
-          <div>sort 필터</div>
-        </div>
-        <div className="issue__table">이슈 테이블</div>
-        <div className="issue__pagination">12345</div>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          {/* TODO: not found 페이지 컴포넌트 구현 */}
+          <Route path="*" element={<h1> not found </h1>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
