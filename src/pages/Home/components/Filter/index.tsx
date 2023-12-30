@@ -1,6 +1,7 @@
 import { FilterBox } from './style';
 import { IoIosArrowDown } from 'react-icons/io';
 
+/* TODO: 필터 기능 구현 */
 const Filter = () => {
   return (
     <FilterBox>
