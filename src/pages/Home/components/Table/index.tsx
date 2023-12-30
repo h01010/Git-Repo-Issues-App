@@ -24,7 +24,7 @@ const Table = () => {
     },
   ];
 
-  const headerKey = headers.map(header => header.value);
+  const headerKey = headers.map((header) => header.value);
 
   interface itemInterface {
     [index: string]: string;
@@ -64,7 +64,7 @@ const Table = () => {
       <thead>
         <tr>
           <th>번호</th>
-          {headers.map(header => (
+          {headers.map((header) => (
             <th key={header.value}>{header.text}</th>
           ))}
         </tr>
@@ -73,7 +73,7 @@ const Table = () => {
         {items.map((item, index) => (
           <tr key={index}>
             <td key={index}>{index + 1}</td>
-            {headerKey.map(key => (
+            {headerKey.map((key) => (
               <td key={key + index}>{item[key] || ''}</td>
             ))}
           </tr>
