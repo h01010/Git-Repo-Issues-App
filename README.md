@@ -55,7 +55,8 @@ npm start
 - branch
     - 브랜치 앞에는 MNA-{num}를 붙여 Project 보드의 태스크 번호와 연결해두었습니다.
 - PR
-    - change list와 결과 화면 result 첨부
+    - change list와 결과 화면 result 첨부(아래)
+          
 ![image](https://github.com/h01010/Git-Repo-Issues-App/assets/44168693/27c08d0b-8c76-48d9-9f8c-16cdf83430fb)
 
 
