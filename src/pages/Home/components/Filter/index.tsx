@@ -1,9 +1,18 @@
+import { FilterBox } from './style';
+import { IoIosArrowDown } from 'react-icons/io';
+
 const Filter = () => {
   return (
-    <div className="issue__filter">
-      <div>이슈 상태</div>
-      <div>sort 필터</div>
-    </div>
+    <FilterBox>
+      <button className="issue__status">
+        <span>이슈 상태</span>
+        <IoIosArrowDown />
+      </button>
+      <button className="issue__sort">
+        <span>작성일 순</span>
+        <IoIosArrowDown />
+      </button>
+    </FilterBox>
   );
 };
 
