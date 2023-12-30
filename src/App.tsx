@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="title">
+        <h1>이슈정리</h1>
+      </div>
+      <div className="issue__list">
+        <div className="issue__filter">
+          <div>이슈 상태</div>
+          <div>sort 필터</div>
+        </div>
+        <div className="issue__table">이슈 테이블</div>
+        <div className="issue__pagination">12345</div>
+      </div>
     </div>
   );
 }
