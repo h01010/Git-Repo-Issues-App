@@ -20,7 +20,7 @@ npm start
 - `/assets` : font, image, icon 등 정적 요소들을 두는 폴더
 - `/components`: 여러 페이지에서 공유되는 shared(or common) 컴포넌트, layout 컴포넌트를 두는 폴더
 - `/pages`: 여러 하위 컴포넌트 조각들이 모여 만들어지는 페이지 컴포넌트
-    - 특정 페이지에서만 사용되는 컴포넌트는 `pages/components/` 안에 두지만, 이번 프로젝트의 경우 공통되는 shared Article 컴포넌트만 사용했기 때문에 `pages/components/`에는 따로 둘 필요가 없었음
+    - 특정 페이지에서만 사용되는 컴포넌트는 `pages/components/` 안에 두며, Title 컴포넌트는 앱 전반적으로 사용될 가능성이 있어 src/components에 둠
 - `/services`: api 파일들을 두는 폴더
 - `/stores`: Mobx store를 이용하여 필요한 데이터를 api로 요청 및 가공, 저장하는 폴더
 - `/types`: entity type들을 보관하는 폴더
